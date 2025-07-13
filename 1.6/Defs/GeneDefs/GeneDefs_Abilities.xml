@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef>
+    <defName>Bulwark_Wings</defName>
+    <label>bulwark wings</label>
+    <description>Carriers of this gene have wings that allow them to jump great distances. These wings do not allow a creature to fly due to a disease that cripples one of the wings.</description>
+    <iconPath>UI/Icons/Genes/BulwarkWings</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>Bulwarks_Leap</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>Bulwarks_Leap</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/Humanlike/BodyAttachments/BulwarkWings/BulwarkWings</texPath>
+				<drawSize>1.1</drawSize>
+				<parentTagDef>Body</parentTagDef>
+        <colorType>Hair</colorType>
+				<drawData>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<dataNorth>
+						<layer>90</layer>
+					</dataNorth>
+          <dataEast>
+						<layer>90</layer>
+					</dataEast>
+          <dataWest>
+						<layer>90</layer>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Bulwarks_Blessing</defName>
+    <label>bulwark's blessing</label>
+    <description>Carriers of this gene have the ability to lend a portion of the archites in their body to another person, granting them increased durability.</description>
+    <iconPath>UI/Icons/Genes/BulwarksBlessing</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>BulwarksBlessing</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BulwarksBlessing</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>2</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <biostatArc>2</biostatArc>
+  </GeneDef>
+</Defs>

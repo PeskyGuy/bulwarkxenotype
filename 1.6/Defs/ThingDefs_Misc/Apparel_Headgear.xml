@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Bulwark_Warmask</defName>
+    <label>bulwark mask</label>
+    <description>A bulwark mask, meant for facial protection while keeping vision and being lightweight.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Equipment/Apparel/BulwarkMask/BulwarkMask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <uiIconScale>1.15</uiIconScale>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>1</Mass>
+      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.02</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.02</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <PainShockThreshold>0.20</PainShockThreshold>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Equipment/Apparel/BulwarkMask/BulwarkMask</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <drawData>
+        <dataNorth>
+          <layer>-3</layer>
+        </dataNorth>
+      </drawData>
+      <ideoDesireAllowedFactionCategoryTags><li>Tribal</li></ideoDesireAllowedFactionCategoryTags>
+      <layers> 
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+      <factionPrerequisiteTags>
+        <li>Tribal</li>
+      </factionPrerequisiteTags>
+    </recipeMaker>
+    <tradeTags>
+      <li>Armor</li>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

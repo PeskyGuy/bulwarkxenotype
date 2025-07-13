@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<AbilityDef>
+		<defName>Bulwarks_Leap</defName>
+		<label>bulwarks leap</label>
+		<description>Beat wings to jump a great distance.</description>
+		<iconPath>UI/Abilities/BulwarkJump</iconPath>
+		<cooldownTicksRange>2100</cooldownTicksRange>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityJump</verbClass>
+			<label>bulwark wings</label>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.3</warmupTime>
+			<range>15</range>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundLanding>Longjump_Land</soundLanding>
+			<flyWithCarriedThing>true</flyWithCarriedThing>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+
+	<AbilityDef>
+    <defName>BulwarksBlessing</defName>
+    <label>bulwarks blessing</label>
+    <description>Create an aura that heals everyone nearby. The effect lasts 12 hours and remains attached to the caster for the duration and cannot be used for 48 hours after casting.</description>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Abilities/BulwarksBlessing</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/BulwarksBlessing</warmupMoteSocialSymbol>
+    <stunTargetWhileCasting>False</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>3</uiOrder>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <cooldownTicksRange>240000</cooldownTicksRange>
+    <statBases>
+      <Ability_Duration>500</Ability_Duration>
+      <Ability_EffectRadius>5</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.5</warmupTime>
+      <range>5</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>HealingAura</hediffDef>
+        <onlyBrain>False</onlyBrain>
+        <onlyApplyToSelf>False</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

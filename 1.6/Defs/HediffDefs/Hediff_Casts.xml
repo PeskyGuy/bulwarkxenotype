@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="MoteBase">
+    <defName>Mote_HealingAura</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>LightingOverlay</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <solidTime>9999999</solidTime>
+      <needsMaintenance>true</needsMaintenance>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <texPath>Things/Mote/HealingAuraMask</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <color>(175, 225, 175)</color>
+      <drawSize>10</drawSize>
+    </graphicData>
+  </ThingDef>
+  </Defs>

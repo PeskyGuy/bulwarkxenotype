@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+		<defName>Bulwark</defName>
+		<label>bulwark</label>
+		<description>A winged, bird-like people molded to serve as guardians on airships or the mountainous regions of their planet. While not capable of long-term flight, they can glide and jump great distances and possess archites that allow them to heal allies in the vicinity.</description>
+		<descriptionShort>An archotech blessed race of winged-folk that serve as guardians.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/BulwarkIcon</iconPath>
+		<combatPowerFactor>1.6</combatPowerFactor>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>AptitudeStrong_Social</li>
+			<li>Bulwark_Wings</li>
+			<li>Hollow_Bones</li>
+			<li>Bulwarks_Blessing</li>
+			<li>KindInstinct</li>
+            <li>DarkVision</li>
+            <li>AptitudeTerrible_Mining</li>
+            <li>Bulwark_IronWilled</li>
+		</genes>
+	</XenotypeDef>
+</Defs>

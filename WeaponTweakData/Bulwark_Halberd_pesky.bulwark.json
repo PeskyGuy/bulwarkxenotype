@@ -1,0 +1,13 @@
+{
+  "TextureModID": "pesky.bulwark",
+  "ItemDefName": "Bulwark_Halberd",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.266055048,
+  "OffY": 0.07847296,
+  "Rotation": 30.0,
+  "HandsMode": 1,
+  "BladeStart": 0.290562034,
+  "BladeEnd": 0.748674452,
+  "MeleeWeaponType": 6
+}
