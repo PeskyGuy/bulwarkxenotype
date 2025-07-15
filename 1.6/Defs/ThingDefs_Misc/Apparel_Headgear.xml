@@ -55,9 +55,11 @@
       <soundWorking>Recipe_Smith</soundWorking>
       <researchPrerequisite>Smithing</researchPrerequisite>
       <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
-      <factionPrerequisiteTags>
-        <li>Tribal</li>
-      </factionPrerequisiteTags>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
     </recipeMaker>
     <tradeTags>
       <li>Armor</li>
